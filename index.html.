@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Products</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#007bff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.products{
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#007bff;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.order-btn{
+    display:block;
+    text-align:center;
+    background:#25D366;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.about{
+    background:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>AK Products</h1>
+    <p>Quality Products • Best Prices • Fast Service</p>
+
+    <a class="btn"
+    href="https://wa.me/923131908222">
+    Order on WhatsApp
+    </a>
+</header>
+
+<section class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300" alt="">
+<div class="card-content">
+<h3>Product 1</h3>
+<p class="price">Rs 999</p>
+<a class="order-btn"
+href="https://wa.me/923131908222?text=I%20want%20to%20order%20Product%201">
+Order Now
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300" alt="">
+<div class="card-content">
+<h3>Product 2</h3>
+<p class="price">Rs 1499</p>
+<a class="order-btn"
+href="https://wa.me/923131908222?text=I%20want%20to%20order%20Product%202">
+Order Now
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300" alt="">
+<div class="card-content">
+<h3>Product 3</h3>
+<p class="price">Rs 1999</p>
+<a class="order-btn"
+href="https://wa.me/923131908222?text=I%20want%20to%20order%20Product%203">
+Order Now
+</a>
+</div>
+</div>
+
+</section>
+
+<section class="about">
+<h2>Why Choose AK Products?</h2>
+<br>
+<p>
+We provide quality products at affordable prices.
+Order easily through WhatsApp and get quick support.
+</p>
+</section>
+
+<footer>
+<h3>AK Products</h3>
+<br>
+<p>WhatsApp: 0313-1908222</p>
+<p>© 2026 AK Products. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
