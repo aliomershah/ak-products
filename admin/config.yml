@@ -1,19 +1,19 @@
-backend:
-  name: github
-  repo: aliomershah/ak-products
-  branch: main
+fields:
+  - {label: "Product Name", name: "title", widget: "string"}
 
-media_folder: "images"
-public_folder: "/images"
+  - {label: "Price (PKR)", name: "price", widget: "string"}
 
-collections:
-  - name: "products"
-    label: "Products"
-    folder: "products"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Product Name", name: "title", widget: "string"}
-      - {label: "Price", name: "price", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Description", name: "body", widget: "markdown"}
+  - label: "Category"
+    name: "category"
+    widget: "select"
+    options:
+      - "Phone Cases"
+      - "Home Use"
+      - "Clothing"
+      - "Lifestyle"
+      - "Electronics"
+      - "Beauty"
+
+  - {label: "Product Image", name: "image", widget: "image"}
+
+  - {label: "Description", name: "body", widget: "markdown"}
